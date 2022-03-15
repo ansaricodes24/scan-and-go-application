@@ -1,0 +1,31 @@
+{
+    "product": [
+        {
+            "id": "01",
+            "name": "Coca-cola Signature Mixers 200ml (Imported) - Pack of 2 (Batch No.02 - Spicy)",
+            "price": "699.00",
+            "img": "https://m.media-amazon.com/images/I/41bRacQ0FgL._PIbundle-2,TopRight,0,0_SX208SY500SH20_.jpg"
+        },
+        
+        {
+            "id": "02",
+            "name": "JOLOCHIP - LAST CHIP CHALLENGE 5g",
+            "price": "1330.00",
+            "img": "https://m.media-amazon.com/images/I/41UCDyiR1JL.jpg"
+        },
+
+        {
+            "id": "03",
+            "name": "ALL THINGS Single Origin Malabar Dark Chef's Chocolate",
+            "price": "2124.00",
+            "img": "https://m.media-amazon.com/images/I/41ev18tq92L.jpg"
+        },
+
+        {
+            "id": "04",
+            "name": "PATCHINO ; Premium Handcrafted Brookies®",
+            "price": "1080.00",
+            "img": "https://m.media-amazon.com/images/I/81tgoVRVDqL._SY741_.jpg"
+        }
+    ]
+}

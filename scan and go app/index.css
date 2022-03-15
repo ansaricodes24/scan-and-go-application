@@ -1,0 +1,102 @@
+body {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+}
+
+html {
+    height: -webkit-fill-available;
+}
+
+/* -------------------------------------- header----------------------------------------- */
+.header {
+    padding: 1rem;
+}
+
+/* --------------------------- product list --------------------------------------------------- */
+.product-list {
+    width: 100%;
+    height: 80vh;
+}
+
+/* delete button on list */
+.dlt-product {
+    display: none;
+}
+
+/* ----------------------------add list item------------------------------------------------ */
+.add-list-item {
+    position: fixed;
+    bottom: 0%;
+    right: 38.2%;
+    z-index: 2;
+}
+
+.add-list-item-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/*================================ card ===========================*/
+.card {
+    width: 100%;
+}
+
+.card img{
+    width: 30%;
+    object-fit: contain;
+}
+
+/* ------------------------------------------ scanner --------------------- */
+.scanner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: aliceblue;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.scanner {
+    display: none;
+}
+
+/* -------------------------------------footer---------------------------------------------------     */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 5vh;
+}
+
+.footer .button1 {
+    width: 100%;
+    height: 100%;
+}
+
+/* --------------------------------------button------------------------------------------ */
+.btn {
+    outline: none;
+    box-shadow: none;
+}
+textarea:focus, 
+textarea.form-control:focus, 
+input.form-control:focus, 
+button.btn:focus, 
+button.btn:active, 
+input[type=text]:focus, 
+input[type=password]:focus, 
+input[type=email]:focus, 
+input[type=number]:focus, 
+[type=text].form-control:focus, 
+[type=password].form-control:focus, 
+[type=email].form-control:focus, 
+[type=tel].form-control:focus, 
+[contenteditable].form-control:focus {
+  box-shadow: inset 0 -1px 0 #ddd;
+    outline: none !important;
+}
+
+
+
+

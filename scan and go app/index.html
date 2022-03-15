@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- stylesheet                                                                                            -->
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- Bootstrap CDN:                                                                                         -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- icon framework -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- title -->
+    <title>Scan and go app model</title>
+  </head>
+
+  <body>
+    <!-- header -->
+    <div class="header">
+      <h2>Scan & Go</h2>
+    </div>
+
+    <!-- product list -->
+    <div class="product-list">
+      <ul class="list-group" id="product-list-group"></ul>
+    </div>
+
+    <!-- add list item [ plus button ] -->
+    <span class="add-list-item">
+      <button class="add-list-item-button btn" onclick="openDialog()">
+        <ion-icon name="add-outline" style="font-size: 4rem; border: 1px solid black;"></ion-icon>
+      </button>
+    </span>
+
+    <!-- pop-up input getting form -->
+    <div class="scanner" id="scanner">
+      <div class="form-group">
+        <button class="btn" style="position: fixed; top: 1px; right: 1px; font-size: larger; font-weight: 800;" onclick="closeDialog()">&times;</button>
+        <label for="prodId">Product ID</label>
+        <input type="number" class="form-control" id="prodId" placeholder="Enter the ID">
+        <button class="btn btn-primary" id="add" style="margin-top: 10px;">ADD</button>
+      </div>
+    </div>
+    <span class="counter" style="display: inline-flex">
+      <button class="btn btn-info" style="float: left; border-radius: 0;" onclick="reduceCount()">-</button>
+      <button class="btn btn-dark" id="prod-count" style="border-radius: 0; width: 6rem;">1</button>
+      <button class="btn btn-info" style="float: right;border-radius: 0;" onclick="addCount()">+</button>
+    </span>
+
+    <!-- footer -->
+    <div class="footer bg-success">
+      <span><h2>Total: <span id="totalPrice"></span></h2></span>
+    </div>
+
+    <!-- javascript -->
+    <script src="index.js"></script>
+  </body>
+</html>
